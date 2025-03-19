@@ -1,4 +1,4 @@
-# Groq App Generator
+# BrillGen AI
 
 An interactive web application that generates and modifies web applications using Groq's LLM API. Built with Next.js and TypeScript.
 
@@ -22,12 +22,17 @@ An interactive web application that generates and modifies web applications usin
 
 Required environment variables:
 - `GROQ_API_KEY`: Your Groq API key
+- `HTML_SIGNING_SECRET`: Secret key for HTML signing
 
 ## Getting Started
 
 1. Clone the repository
 2. Install dependencies: `npm install`
-3. Set up your environment variables
+3. Set up your environment variables in a `.env` file
 4. Run the development server: `npm run dev`
 
 The application will be available at `http://localhost:3000`.
+
+## Developed by
+
+[BRILLIANT ESYSTEMS LIMITED](https://github.com/BRILLIANT-ESYSTEMS-LIMITED)
