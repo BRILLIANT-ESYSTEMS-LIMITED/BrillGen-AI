@@ -88,10 +88,10 @@ export default function PromptView() {
 			<div className="flex flex-col gap-3 items-center justify-center min-w-[50%] px-4 md:px-0 mt-10">
 			<div>
 					<h1 className="text-[2em] md:text-[3em] font-montserrat text-center">
-						Build a micro-app
+						Build a Micro-App
 					</h1>
 					<h2 className="text-[1.2em] md:text-[1.4em] font-montserrat mb-4 md:mb-8 text-center text-muted-foreground flex items-center justify-center gap-2">
-					at Groq speed
+					at Brilliant Esystems Limited Speed
 						<Image src="/Groq_Bolt.svg" alt="Groq Logo" width={32} height={32} />
 					</h2>
 				</div>
