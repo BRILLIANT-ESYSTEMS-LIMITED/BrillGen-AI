@@ -303,7 +303,9 @@ function HomeContent() {
 					<span className="hidden md:inline text-sm text-muted-foreground">
 						Powered by
 					</span>
-					<AppLogo className="scale-75" size={100} />
+					<div className="flex items-center justify-center mb-4">
+						<AppLogo className="scale-75" size={250} />
+					</div>
 				</div>
 				{/* Stats section */}
 				<div className="md:w-1/2 md:pl-4 flex items-center justify-center md:justify-start py-2">

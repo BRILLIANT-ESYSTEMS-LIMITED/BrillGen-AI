@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import React from "react";
 
-export default function AppLogo({ className, size = 80 }: { className?: string; size?: number }) {
+export default function AppLogo({ className, size = 200 }: { className?: string; size?: number }) {
 	const { resolvedTheme, theme } = useTheme();
 	const [mounted, setMounted] = React.useState(false);
 
@@ -21,9 +21,10 @@ export default function AppLogo({ className, size = 80 }: { className?: string; 
 				src={logoSrc} 
 				alt="BRILLGEN" 
 				width={size} 
-				height={size}
-				style={{ width: 'auto', height: size/3.5 }}
+				height={size/2}
+				style={{ width: 'auto', height: size/2 }}
 				className="bg-black rounded-sm" // Always black background for consistent branding
+				priority // Add priority loading for the logo
 			/>
 		</div>
 	);
