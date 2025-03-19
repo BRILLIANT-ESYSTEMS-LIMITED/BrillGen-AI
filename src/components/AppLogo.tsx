@@ -11,18 +11,19 @@ export default function AppLogo({ className, size = 80 }: { className?: string; 
 		setMounted(true);
 	}, []);
 
-	// Avoid hydration mismatch by using a default theme before mounting
-	const logoSrc = !mounted ? "/groqlabs_logo-black.png" : 
-		(resolvedTheme === "dark" ? "/groqlabs_logo-white.png" : "/groqlabs_logo-black.png");
+	// A single BRILLGEN logo for both themes
+	// For brand consistency, we're using the same logo for light and dark modes
+	const logoSrc = "/groqlabs_logo-black.png"; // Continue using the existing file name for compatibility
 
 	return (
 		<div className={cn("flex flex-col items-center gap-2", className)}>
 			<Image 
 				src={logoSrc} 
-				alt="Groq" 
+				alt="BRILLGEN" 
 				width={size} 
 				height={size}
-				style={{ width: 'auto', height: size/3.41333333333 }}
+				style={{ width: 'auto', height: size/3.5 }}
+				className="bg-black rounded-sm" // Always black background for consistent branding
 			/>
 		</div>
 	);
