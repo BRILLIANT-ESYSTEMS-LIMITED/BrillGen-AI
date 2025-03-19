@@ -2,6 +2,8 @@
 
 An interactive web application that generates and modifies web applications using Groq's LLM API. Built with Next.js and TypeScript.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-site-id/deploy-status)](https://app.netlify.com/sites/your-site-name/deploys)
+
 ## Features
 
 - Real-time app generation based on natural language queries
@@ -9,6 +11,7 @@ An interactive web application that generates and modifies web applications usin
 - Interactive feedback system for iterative improvements
 - Version control and history tracking
 - Share and export functionality
+- Continuous deployment with Netlify
 
 ## Tech Stack
 
@@ -17,12 +20,15 @@ An interactive web application that generates and modifies web applications usin
 - Groq SDK
 - React Syntax Highlighter
 - UUID for session management
+- Supabase for data storage
 
 ## Environment Variables
 
 Required environment variables:
 - `GROQ_API_KEY`: Your Groq API key
 - `HTML_SIGNING_SECRET`: Secret key for HTML signing
+- `SUPABASE_URL`: Your Supabase project URL
+- `SUPABASE_KEY`: Your Supabase anon key
 
 ## Getting Started
 
@@ -32,6 +38,10 @@ Required environment variables:
 4. Run the development server: `npm run dev`
 
 The application will be available at `http://localhost:3000`.
+
+## Deployment
+
+This project is automatically deployed to Netlify when changes are pushed to the master branch.
 
 ## Developed by
 
